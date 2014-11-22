@@ -50,10 +50,13 @@ app.controller('ResultCtrl', ['$scope', '$routeParams', function($scope, $routeP
 app.controller('WorkshopCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
 
     $scope.workshop = workshops[$routeParams.id ? $routeParams.id : 0]; // on pick un fake workshop
+    $scope.users = users;
 
 }]);
 
 
-app.controller('UserCtrl', ['$scope', function($scope) {
+app.controller('UserCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
+
+    $scope.user = users[$routeParams.id];
 
 }]);

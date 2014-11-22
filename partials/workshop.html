@@ -1,7 +1,21 @@
 <section>
     <div class="container" ng-controller="WorkshopCtrl">
-        <div class="row title">
-            <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="pictures/user.jpg" alt="User" />
+                    </div>
+                    <div class="col-md-8" style="font-size:24px;">
+                        <ul>
+                            <li>{{ users[workshop.user].name }}</li>
+                            <li>{{ users[workshop.user].age }} ans</li>
+                            <div class="star-rating" star-rating rating-value="rating" data-max="5" on-rating-selected="rateFunction(rating)"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 title">
                 {{ workshop.name }}
             </div>
         </div>
@@ -40,18 +54,6 @@
                     <span style="font-size:small">le <strong>{{ workshop.date }}</strong> <br>à <strong>{{ workshop.hour }}</strong></span></p>
                 </div>
                 <div class="row profile-comments">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="pictures/user.jpg" alt="User" />
-                        </div>
-                        <div class="col-md-8">
-                            <ul>
-                                <li>{{ users[workshop.user].name }}</li>
-                                <li>{{ users[workshop.user].age }} ans</li>
-                                <div class="star-rating" star-rating rating-value="rating" data-max="5" on-rating-selected="rateFunction(rating)"></div>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="container-fluid comments" ng-repeat="comment in workshop.comments">
 

@@ -1,5 +1,15 @@
+body {
+    background-color: #f8f4db;
+    color: #6d8d80;
+}
+
+.button {
+    background-color: #91B5A8;
+    color: #3156AD;
+}
+
 nav {
-    background-color : black;
+    background-color : #F8F4DB;
     color: white;
     padding: 1em;
     margin-bottom: 20px;
@@ -7,11 +17,15 @@ nav {
 
 nav li {
     display: inline-block;
-    margin-right: 10px;
+    padding-right: 20px;
+    /*vertical-align: middle;*/
+    height: 50px;
+    line-height: 50px;
 }
 
 nav a {
-    color: white;
+    /*color: #FF8D00;*/
+    color: #3156AD;
     font-weight: bold;
 }
 
@@ -19,6 +33,12 @@ nav a:hover {
     color: white;
     font-weight: bold;
     text-decoration: none;
+}
+
+.logo-slim {
+    float: left;
+    height: 50px;
+    margin-right: 20px;
 }
 
 form#search input {
@@ -32,22 +52,27 @@ form#search input[type=submit] {
 }
 
 h1 {
+    color: #AD005A;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .row {
     padding-bottom: 10px;
 }
 
+section {
+    /*color: #112831;*/
+}
+
 section .title {
-    border: solid 1px black;
     text-align: center;
     font-size: 3em;
     padding: 0.75em;
+    color: #112838;
 }
 
 section .workshop {
-    border: solid 1px black;
     font-size: 1.5em;
 }
 
@@ -60,6 +85,10 @@ section .workshop h1 {
     text-align: center;
 }
 
+section .workshop .column1 {
+    border-right: 2px solid #AD005A;
+}
+
 section .participation {
     text-align: center;
 }
@@ -70,7 +99,6 @@ section .participation s {
 }
 
 section .profile-comments {
-    border: solid 1px black;
     min-height: 6em;
 }
 
@@ -103,7 +131,6 @@ section .profile .stars {
 }
 
 section .activite-recentes {
-    border-top: 1px black solid;
 }
 
 section .activite-recentes h1 {
@@ -147,3 +174,6 @@ ul {
     list-style-type: none;
 }
 
+.text-succes {
+    color: #91B5A8;
+}

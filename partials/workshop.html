@@ -16,11 +16,11 @@
                 </div>
             </div>
             <div class="col-md-9 title">
-                {{ workshop.name }}
+                <h1>{{ workshop.name }}</h1>
             </div>
         </div>
         <div class="row workshop">
-            <div class="col-md-9">
+            <div class="col-md-9 column1">
                 <div class="row">
                     <div class="col-md-6">
                         <ul>
@@ -49,7 +49,7 @@
             </div>
             <div class="col-md-3">
                 <div class="row participation">
-                    <input ng-hide="workshop.participating" type="button" value="Participer !" class="btn btn-lg" ng-click="workshop.participating=!workshop.participating">
+                    <input ng-hide="workshop.participating" type="button" value="Participer !" class="btn btn-lg button" ng-click="workshop.participating=!workshop.participating">
                     <p ng-show="workshop.participating"><span class="text-success">Vous participez à cet atelier !</span><br />
                     <span style="font-size:small">le <strong>{{ workshop.date }}</strong> <br>à <strong>{{ workshop.hour }}</strong></span></p>
                 </div>

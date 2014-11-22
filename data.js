@@ -71,11 +71,13 @@ var users = [
     {
         id: 0,
         name: "Alex",
-        age: 21
+        age: 21,
+        bio: "J'aime beaucoup le badminton."
     },
     {
         id: 1,
         name: "JP",
-        age: 58
+        age: 58,
+        bio: "J'aime bien la nation. J'espère que vous aussi !"
     }
 ];

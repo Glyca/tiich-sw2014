@@ -58,5 +58,6 @@ app.controller('WorkshopCtrl', ['$scope', '$routeParams', function($scope, $rout
 app.controller('UserCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
 
     $scope.user = users[$routeParams.id];
+    $scope.workshops = workshops;
 
 }]);

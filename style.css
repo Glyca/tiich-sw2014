@@ -77,3 +77,31 @@ section .comments {
 section .author {
     text-align: right;
 }
+
+section .profile {
+    font-size: 2em;
+}
+
+section .profile h1 {
+    font-size: 1.5em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+section .profile .bio {
+    font-style: italic;
+    line-height: 1;
+}
+
+section .profile .stars {
+    font-size: 2em;
+}
+
+section .activite-recentes {
+    border-top: 1px black solid;
+}
+
+section .activite-recentes h1 {
+    font-size: 1em;
+    text-align: center;
+}

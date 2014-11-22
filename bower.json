@@ -1,0 +1,19 @@
+{
+  "name": "tiich-sw2014",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Glyca/tiich-sw2014",
+  "authors": [
+    "Glyca <glycaa@gmail.com>"
+  ],
+  "description": "Tiich front-end prototype for the 2014 Startup Weekend",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

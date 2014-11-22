@@ -21,6 +21,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         .when('/user/:id', {
             templateUrl: 'partials/user.html',
             controller: 'UserCtrl'
+        })
+
+        .otherwise({
+            templateUrl: 'partials/soon.html'
         });
 
     $locationProvider.html5Mode(false).hashPrefix('');

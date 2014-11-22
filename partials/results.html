@@ -1,8 +1,8 @@
 <div ng-controller="ResultCtrl" class="container">
 
     <form ng-submit="search()" id="search">
-        <input ng-model="words" placeholder="Que voulez-vous apprendre demain ?">
-        <input class="btn btn-lg" type="submit" value="Go">
+            <input ng-model="words" placeholder="Que voulez-vous apprendre demain ?">
+            <button class="btn btn-lg" type="submit"><i class="fa fa-search"></i></button>
     </form>
 
     <h1 ng-show="words">Ateliers proches de vous sur {{ words }}</h1>

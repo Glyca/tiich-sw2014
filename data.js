@@ -7,6 +7,7 @@ var workshops = [
         place: "Strasbourg",
         details: "",
         checklist: "",
+        price : 4,
         comments: [
             {
                 user: 1,
@@ -22,6 +23,7 @@ var workshops = [
         place: "Strasbourg",
         details: "",
         checklist: "",
+        price : 4,
         comments: [
             {
                 user: 1,
@@ -37,6 +39,7 @@ var workshops = [
         place: "Strasbourg",
         details: "",
         checklist: "",
+        price : 4,
         comments: [
             {
                 user: 1,

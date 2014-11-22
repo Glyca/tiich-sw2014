@@ -1,14 +1,16 @@
 <div class="container">
     <div class="jumbotron">
-        <h1 class="text-center">Tiich</h1>
+        <p class="text-center"><img src="pictures/logo.png"></p>
 
         <form ng-controller="SearchCtrl" ng-submit="search()" id="search">
-            <input ng-model="words" placeholder="Que voulez-vous apprendre ?">
+            <input ng-model="words" placeholder="Que voulez-vous apprendre demain ?">
             <input class="btn btn-lg" type="submit" value="Go">
         </form>
 
+        <p><br></p>
+
         <p class="text-center">
-            <a class="btn btn-lg" href="#/search/" role="button">Recherche magique</a>
+            <a class="btn btn-lg" href="#/search/" role="button">Ateliers à proximité</a>
         </p>
     </div>
 </div>

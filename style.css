@@ -1,7 +1,10 @@
 body {
     background-color: #f8f4db;
-    color: #6d8d80;
 }
+
+a, .btn-link, input {
+      color: #6d8d80;
+  }
 
 .button {
     background-color: #91B5A8;
@@ -27,6 +30,7 @@ nav a {
     /*color: #FF8D00;*/
     color: #3156AD;
     font-weight: bold;
+    font-size: 18px;
 }
 
 nav a:hover {
@@ -45,6 +49,8 @@ form#search input {
     width: 90%;
     height: 55px;
     font-size: 24px;
+    vertical-align: top;
+    padding: 10px;
 }
 
 form#search input[type=submit] {
@@ -180,4 +186,13 @@ ul {
 
 .text-succes {
     color: #91B5A8;
+}
+
+.jumbotron {
+    background: transparent;
+    padding: 0;
+}
+
+.jumbotron img {
+    width: 70%;
 }

@@ -111,6 +111,15 @@ section .activite-recentes h1 {
     text-align: center;
 }
 
+section .workshop .checkbox li:before {
+    content: "– "
+}
+
+section .participation {
+    padding: 15px;
+    height: 150px;
+}
+
 .rating{
     color: #a9a9a9;
     margin: 0;

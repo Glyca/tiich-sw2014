@@ -17,7 +17,8 @@ var workshops = [
         comments: [
             {
                 user: 1,
-                message: "Intéressant et pédagogue, Alex m'a beaucoup apris ! Merci :)"
+                message: "Intéressant et pédagogue, Alex m'a beaucoup apris ! Merci :)",
+                rating: 5
             }
         ]
     },
@@ -39,7 +40,8 @@ var workshops = [
         comments: [
             {
                 user: 2,
-                message: "Merci pour votre atelier Tennis débutant, c'était super !"
+                message: "Merci pour votre atelier Tennis débutant, c'était super !",
+                rating: 3
             }
         ]
     },
@@ -61,7 +63,8 @@ var workshops = [
         comments: [
             {
                 user: 3,
-                message: "JP est très intéressant et sympathique."
+                message: "JP est très intéressant et sympathique.",
+                rating: 1
             }
         ]
     }

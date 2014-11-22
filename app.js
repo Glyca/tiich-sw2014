@@ -31,7 +31,7 @@ app.controller('SearchCtrl', ['$scope', '$location', function($scope, $location)
 
     console.log("la");
 
-    this.search = function() {
+    $scope.search = function() {
         console.log("ici");
         $location.path('/search/' + $scope.words);
     }
@@ -39,7 +39,10 @@ app.controller('SearchCtrl', ['$scope', '$location', function($scope, $location)
 }]);
 
 
-app.controller('ResultCtrl', ['$scope', function($scope) {
+app.controller('ResultCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
+
+    $scope.words = $routeParams.words;
+    $scope.workshops = workshops; // on prend nos fake workshops
 
 }]);
 

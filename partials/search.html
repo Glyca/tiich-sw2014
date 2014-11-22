@@ -1,5 +1,10 @@
-<h1>Rechercher</h1>
-<form ng-controller="SearchCtrl" ng-submit="search()">
-<input ng-model="words" placeholder="Que voulez-vous apprendre ?">
-    <input type="submit">
-</form>
+<div class="container">
+    <div class="jumbotron">
+        <form ng-controller="SearchCtrl" ng-submit="search()">
+            <input ng-model="words" placeholder="Que voulez-vous apprendre ?">
+            <input class="btn btn-lg" type="submit" value="Go">
+        </form>
+
+        <a class="btn btn-lg" href="#" role="button">Recherche magique</a>
+    </div>
+</div>

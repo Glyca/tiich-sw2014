@@ -1,10 +1,14 @@
 <div class="container">
     <div class="jumbotron">
-        <form ng-controller="SearchCtrl" ng-submit="search()">
+        <h1 class="text-center">Tiich</h1>
+
+        <form ng-controller="SearchCtrl" ng-submit="search()" id="search">
             <input ng-model="words" placeholder="Que voulez-vous apprendre ?">
             <input class="btn btn-lg" type="submit" value="Go">
         </form>
 
-        <a class="btn btn-lg" href="#" role="button">Recherche magique</a>
+        <p class="text-center">
+            <a class="btn btn-lg" href="#/search/" role="button">Recherche magique</a>
+        </p>
     </div>
 </div>

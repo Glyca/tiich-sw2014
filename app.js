@@ -8,7 +8,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'SearchCtrl'
         })
 
-        .when('/search/:words', {
+        .when('/search/:words?', {
             templateUrl: 'partials/results.html',
             controller: 'ResultCtrl'
         })
@@ -41,11 +41,15 @@ app.controller('ResultCtrl', ['$scope', '$routeParams', function($scope, $routeP
 
     $scope.words = $routeParams.words;
     $scope.workshops = workshops; // on prend nos fake workshops
+    $scope.expanded = false;
+    $scope.otherWorkshops = workshops;
 
 }]);
 
 
-app.controller('WorkshopCtrl', ['$scope', function($scope) {
+app.controller('WorkshopCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
+
+    $scope.workshop = workshops[$routeParams.id ? $routeParams.id : 0]; // on pick un fake workshop
 
 }]);
 

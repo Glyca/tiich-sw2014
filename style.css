@@ -2,6 +2,7 @@ nav {
     background-color : black;
     color: white;
     padding: 1em;
+    margin-bottom: 20px;
 }
 
 nav a {
@@ -13,4 +14,18 @@ nav a:hover {
     color: white;
     font-weight: bold;
     text-decoration: underline;
+}
+
+form#search input {
+    width: 90%;
+    height: 55px;
+    font-size: 24px;
+}
+
+form#search input[type=submit] {
+    width: 9%;
+}
+
+h1 {
+    margin-bottom: 20px;
 }

@@ -5,6 +5,38 @@ var workshops = [
         user: 1,
         date: "vendredi 5 décembre 2014 à 18h00",
         place: "Strasbourg",
+        details: "",
+        checklist: "",
+        comments: [
+            {
+                user: 1,
+                message: "Amazing!"
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: "Initiation au Tennis",
+        user: 1,
+        date: "vendredi 5 décembre 2014 à 18h00",
+        place: "Strasbourg",
+        details: "",
+        checklist: "",
+        comments: [
+            {
+                user: 1,
+                message: "Amazing!"
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: "Pétanque niveau mondial",
+        user: 2,
+        date: "dimanche 7 décembre 2014 à 18h00",
+        place: "Strasbourg",
+        details: "",
+        checklist: "",
         comments: [
             {
                 user: 1,
@@ -18,5 +50,9 @@ var users = [
     {
         id: 1,
         name: "Alex"
+    },
+    {
+        id: 2,
+        name: "JP"
     }
 ];

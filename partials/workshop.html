@@ -20,9 +20,8 @@
             </div>
         </div>
         <div class="row workshop">
-            <div class="col-md-9 column1">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <ul>
                             <li><b>Lieu :</b> {{ workshop.place }}</li>
                             <li><b>Date :</b> {{ workshop.date }}</li>
@@ -30,40 +29,40 @@
                             <li><b>Durée :</b> {{ workshop.duration }}</li>
                         </ul>
                     </div>
-                    <img src="pictures/map.png" alt="Place to go" class="col-md-6"/>
+                    <img src="pictures/map.png" alt="Place to go" class="col-md-4"/>
+                    <div class="col-md-4 text-center">
+                        <input ng-hide="workshop.participating" type="button" value="Participer !" class="btn btn-lg" ng-click="workshop.participating=!workshop.participating">
+                        <p ng-show="workshop.participating"><span class="text-success" style="font-size: 20px">Vous participez à cet atelier !</span><br />
+                        <span style="font-size:small">le <strong>{{ workshop.date }}</strong> <br>à <strong>{{ workshop.hour }}</strong></span></p>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 details">
-                        <h1>Détails</h1>
+                    <div class="col-md-4 details">
+                        <h2>Détails</h2>
                         <p ng-bind-html="workshop.details">
                         </p>
                     </div>
-                    <div class="col-md-6">
-                        <h1>Check-List</h1>
+                    <div class="col-md-4">
+                        <h2>Check-List</h2>
                         <ul class="checkbox" ng-repeat="check in workshop.checklist">
                             <li>{{ check }}</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row participation">
-                    <input ng-hide="workshop.participating" type="button" value="Participer !" class="btn btn-lg" ng-click="workshop.participating=!workshop.participating">
-                    <p ng-show="workshop.participating"><span class="text-success" style="font-size: 20px">Vous participez à cet atelier !</span><br />
-                    <span style="font-size:small">le <strong>{{ workshop.date }}</strong> <br>à <strong>{{ workshop.hour }}</strong></span></p>
-                </div>
-                <div class="row profile-comments">
-                    <div class="row">
-                        <div class="container-fluid comments" ng-repeat="comment in workshop.comments">
+                    <div class="col-md-4">
+                        <div class="row profile-comments">
+                            <div class="row">
+                                <div class="container-fluid comments" ng-repeat="comment in workshop.comments">
 
-                            <div class="comment">
-                                <h1>Avis</h1>
-                                {{ comment.message }}
-                                <div style="clear: both;"></div>
-                                <div class="star-rating pull-left" star-rating rating-value="comment.rating" data-max="5" on-rating-selected="rateFunction(rating)"></div>
-                                <div class="author pull-right">{{ users[comment.user].name }}</div>
+                                    <div class="comment">
+                                        <h2>Avis</h2>
+                                        {{ comment.message }}
+                                        <div style="clear: both;"></div>
+                                        <div class="star-rating pull-left" star-rating rating-value="comment.rating" data-max="5" on-rating-selected="rateFunction(rating)"></div>
+                                        <div class="author pull-right">{{ users[comment.user].name }}</div>
+                                    </div>
+
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

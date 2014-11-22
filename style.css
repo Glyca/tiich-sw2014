@@ -9,6 +9,14 @@ a, .btn-link, input {
 .button {
     background-color: #91B5A8;
     color: #3156AD;
+    display: block;
+}
+
+h2 {
+    color: #AD005A;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
 
 nav {
@@ -84,11 +92,6 @@ section .workshop {
 
 section .workshop ul {
     list-style-type: none;
-}
-
-section .workshop h1 {
-    font-size: 1.2em;
-    text-align: center;
 }
 
 section .workshop .column1 {

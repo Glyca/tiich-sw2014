@@ -29,3 +29,51 @@ form#search input[type=submit] {
 h1 {
     margin-bottom: 20px;
 }
+
+.row {
+    padding-bottom: 10px;
+}
+
+section .title {
+    border: solid 1px black;
+    text-align: center;
+    font-size: 3em;
+    padding: 1em;
+}
+
+section .workshop {
+    border: solid 1px black;
+    font-size: 1.5em;
+}
+
+section .workshop ul {
+    list-style-type: none;
+}
+
+section .workshop h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+section .participation {
+    text-align: center;
+}
+
+section .participation s {
+    display: block;
+    font-size: 1.5em;
+}
+
+section .profile-comments {
+    border: solid 1px black;
+    min-height: 6em;
+}
+
+section .comments {
+    margin: 2px;
+    font-size: .8em;
+}
+
+section .author {
+    text-align: right;
+}

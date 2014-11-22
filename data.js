@@ -70,10 +70,12 @@ var workshops = [
 var users = [
     {
         id: 1,
-        name: "Alex"
+        name: "Alex",
+        age: 21
     },
     {
         id: 2,
-        name: "JP"
+        name: "JP",
+        age: 58
     }
 ];

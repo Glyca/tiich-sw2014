@@ -1,0 +1,16 @@
+nav {
+    background-color : black;
+    color: white;
+    padding: 1em;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}

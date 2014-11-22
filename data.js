@@ -7,7 +7,7 @@ var workshops = [
         hour: "18h00",
         duration: "1h00",
         place: "Strasbourg",
-        details: "",
+        details: "<p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. <br /> Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. <br /> Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis.</p>",
         checklist: "",
         price : 4,
         checklist: [
@@ -30,7 +30,7 @@ var workshops = [
         hour: "18h00",
         duration: "1h00",
         place: "Strasbourg",
-        details: "",
+        details: "Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies.<br /> Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. <br /> Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo.",
         checklist: "",
         price : 4,
         checklist: [
@@ -53,7 +53,7 @@ var workshops = [
         hour: "18h00",
         duration: "1h00",
         place: "Strasbourg",
-        details: "",
+        details: "Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non. <br /> Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. <br />Vestibulum ut justo vel sapien venenatis tincidunt. Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus.",
         checklist: "",
         price : 4,
         checklist: [

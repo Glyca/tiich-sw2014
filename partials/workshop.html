@@ -33,10 +33,9 @@
                     <img src="pictures/map.png" alt="Place to go" class="col-md-6"/>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 details">
                         <h1>Détails</h1>
-                        <p>
-                            {{ workshop.details }}
+                        <p ng-bind-html="workshop.details">
                         </p>
                     </div>
                     <div class="col-md-6">
@@ -58,6 +57,7 @@
                         <div class="container-fluid comments" ng-repeat="comment in workshop.comments">
 
                             <div class="comment">
+                                <h1>Avis</h1>
                                 {{ comment.message }}
                                 <div style="clear: both;"></div>
                                 <div class="star-rating pull-left" star-rating rating-value="comment.rating" data-max="5" on-rating-selected="rateFunction(rating)"></div>

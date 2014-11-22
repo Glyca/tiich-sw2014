@@ -147,6 +147,10 @@ section .participation {
     height: 150px;
 }
 
+section .details {
+    text-align: justify;
+}
+
 .rating{
     color: #a9a9a9;
     margin: 0;

@@ -17,7 +17,7 @@ var workshops = [
         comments: [
             {
                 user: 1,
-                message: "Intéressant et pédagogue, Alex m'a beaucoup apris ! Merci :)",
+                message: "Intéressant et pédagogue, Alex m'a beaucoup appris ! Merci :)",
                 rating: 5
             }
         ]

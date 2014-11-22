@@ -17,7 +17,7 @@ var workshops = [
         comments: [
             {
                 user: 1,
-                message: "Amazing!"
+                message: "Intéressant et pédagogue, Alex m'a beaucoup apris ! Merci :)"
             }
         ]
     },
@@ -38,8 +38,8 @@ var workshops = [
         ],
         comments: [
             {
-                user: 1,
-                message: "Amazing!"
+                user: 2,
+                message: "Merci pour votre atelier Tennis débutant, c'était super !"
             }
         ]
     },
@@ -60,8 +60,8 @@ var workshops = [
         ],
         comments: [
             {
-                user: 1,
-                message: "Amazing!"
+                user: 3,
+                message: "JP est très intéressant et sympathique."
             }
         ]
     }
@@ -77,7 +77,22 @@ var users = [
     {
         id: 1,
         name: "JP",
-        age: 58,
+        age: 58
+    },
+    {
+        id: 2,
+        name: "Thomas G.",
+        age: 18
+    },
+    {
+        id: 3,
+        name: "Sania H.",
+        age: 38
+    },
+    {
+        id: 4,
+        name: "John",
+        age: 34,
         bio: "J'aime bien la nation. J'espère que vous aussi !"
     }
 ];

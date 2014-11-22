@@ -27,15 +27,17 @@
                     </div>
                     <div class="col-md-6">
                         <h1>Check-List</h1>
-                        <ul ng-repeat="check in checklist">
-                            <li>{{ check }}</li>
+                        <ul ng-repeat="check in workshop.checklist">
+                            <li><input type="checkbox"> {{ check }}</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="row participation">
-                    <input type="button" value="Participer !" class="btn btn-lg"/>
+                    <input ng-hide="workshop.participating" type="button" value="Participer !" class="btn btn-lg" ng-click="workshop.participating=!workshop.participating">
+                    <p ng-show="workshop.participating"><span class="text-success">Vous participez à cet atelier !</span><br />
+                    <span style="font-size:small">le <strong>{{ workshop.date }}</strong> <br>à <strong>{{ workshop.hour }}</strong></span></p>
                 </div>
                 <div class="row profile-comments">
                     <div class="row">
@@ -46,24 +48,18 @@
                             <ul>
                                 <li>{{ users[workshop.user].name }}</li>
                                 <li>{{ users[workshop.user].age }} ans</li>
-                                <li>* * * *</li>
+                                <div class="star-rating" star-rating rating-value="rating" data-max="5" on-rating-selected="rateFunction(rating)"></div>
                             </ul>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="container-fluid comments">
+                        <div class="container-fluid comments" ng-repeat="comment in workshop.comments">
+
                             <div class="comment">
-                                "Intéressant et pédagogue, Michael m'a beaucoup apris ! Merci :)"
-                                <div class="author">Marie F.</div>
+                                {{ comment.message }}
+                                <div class="author">{{ users[comment.user].name }}</div>
                             </div>
-                            <div class="comment">
-                                "Merci pour votre atelier Tenis débutant, c'était super !"
-                                <div class="author">Thomas G.</div>
-                            </div>
-                            <div class="comment">
-                                "Michael est très intéressant et sympathique."
-                                <div class="author">Sania H.</div>
-                            </div>
+
                         </div>
                     </div>
                 </div>

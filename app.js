@@ -29,8 +29,6 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
 app.controller('SearchCtrl', ['$scope', '$location', function($scope, $location) {
 
-    console.log("la");
-
     $scope.search = function() {
         console.log("ici");
         $location.path('/search/' + $scope.words);

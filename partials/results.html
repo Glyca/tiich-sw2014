@@ -1,1 +1,13 @@
-<h1>Ateliers proches de vous pour "{{ words }}"</h1>
+<div ng-controller="ResultCtrl" class="container">
+    <h1>Ateliers proches de vous pour "{{ words }}"</h1>
+    <ul ng-repeat="workshop in workshops | filter: words" style="list-style-type: none">
+        <li>
+            <p style="float: left"><a href="#/workshop/{{ workshop.id }}">
+                <strong>{{ workshop.name }}</strong><br />
+                {{ workshop.date }}<br />
+                {{ workshop.place }}
+            </a></p>
+            <img style="float: right" src="user.jpg">
+        </li>
+    </ul>
+</div>

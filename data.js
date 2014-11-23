@@ -19,6 +19,11 @@ var workshops = [
                 user: 1,
                 message: "Intéressant et pédagogue, Alex m'a beaucoup appris ! Merci :)",
                 rating: 5
+            },
+            {
+                user: 3,
+                message: "Intéressant et pédagogue, Alex m'a beaucoup appris ! Merci :)",
+                rating: 3
             }
         ]
     },

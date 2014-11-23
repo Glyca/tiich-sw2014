@@ -48,15 +48,28 @@
                     <div class="col-md-4">
                         <div class="row profile-comments">
                             <div class="row">
+
+                                <h2>Avis</h2>
+
+                                <div class="container comment" ng-show="workshop.participating && !comment_published">
+                                    <form ng-submit="publish_comment(new_comment)">
+                                        <div class="author pull-left">{{ users[new_comment.user].name }}</div>
+                                        <div class="star-rating pull-right" star-rating rating-value="new_comment.rating" data-max="5"></div>
+                                        <div style="clear: both;"></div>
+                                        <textarea ng-model="new_comment.message" placeholder="Donnez votre avis sur l'atelier"></textarea>
+                                        <button type="submit">Publier</button>
+                                    </form>
+                                </div>
+
+
                                 <div class="container-fluid comments" ng-repeat="comment in workshop.comments">
 
                                     <div class="comment">
-
-                                        <h2>Avis</h2>
-                                        {{ comment.message }}
+                                        <div class="author pull-left">{{ users[comment.user].name }}</div>
+                                        <div class="star-rating pull-right" star-rating rating-value="comment.rating" data-max="5" on-rating-selected="rateFunction(rating)"></div>
                                         <div style="clear: both;"></div>
-                                        <div class="star-rating pull-left" star-rating rating-value="comment.rating" data-max="5" on-rating-selected="rateFunction(rating)"></div>
-                                        <div class="author pull-right">{{ users[comment.user].name }}</div>
+                                        <p>{{ comment.message }} <br>
+                                            <button ng-if="comment.user == 0" ng-click="edit_comment(comment)" class="btn btn-link"><i class="fa fa-pencil-square-o"></i>Modifier</button></p>
                                     </div>
 
                                 </div>

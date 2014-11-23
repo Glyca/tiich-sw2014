@@ -55,7 +55,20 @@ app.controller('WorkshopCtrl', ['$scope', '$routeParams', function($scope, $rout
 
     $scope.workshop = workshops[$routeParams.id ? $routeParams.id : 0]; // on pick un fake workshop
     $scope.users = users;
-    $scope.rating = 5;
+    $scope.rating = 4;
+    $scope.new_comment = {
+        user: 0,
+        rating: 1
+    };
+    $scope.publish_comment = function(new_comment) {
+        $scope.workshop.comments.unshift(new_comment);
+        $scope.comment_published = true;
+    }
+    $scope.edit_comment = function(comment) {
+        $scope.new_comment = comment;
+        $scope.comment_published = false;
+        $scope.workshop.comments.splice($scope.workshop.comments.indexOf(comment), 1);
+    }
 
 }]);
 

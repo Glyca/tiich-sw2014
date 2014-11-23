@@ -2,8 +2,9 @@ body {
     background-color: #f8f4db;
 }
 
-a, .btn-link, input {
+a, .btn-link, input, .btn-link:hover, .btn-link:focus {
       color: #6d8d80;
+    text-decoration: none;
   }
 
 .button {
@@ -119,6 +120,7 @@ section .comments {
 
 section .author {
     text-align: right;
+    font-weight: bold;
 }
 
 section .profile {

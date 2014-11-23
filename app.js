@@ -8,7 +8,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'SearchCtrl'
         })
 
-        .when('/search/:words?', {
+        /*.when('/search/:words?', {
             templateUrl: 'partials/results.html',
             controller: 'ResultCtrl'
         })
@@ -21,7 +21,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         .when('/user/:id', {
             templateUrl: 'partials/user.html',
             controller: 'UserCtrl'
-        })
+        })*/
 
         .otherwise({
             templateUrl: 'partials/soon.html'

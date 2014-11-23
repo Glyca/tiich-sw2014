@@ -92,7 +92,12 @@ var workshops = [
         comments: [
             {
                 user: 4,
-                message: "Paulina est passionante et m'a donné envie de revenir au prochain en janvier !",
+                message: "Polina est passionante et m'a donné envie de revenir en janvier !",
+                rating: 5
+            },
+            {
+                user: 3,
+                message: "Malgré le froid, on a réussi à bien s'amuser !",
                 rating: 5
             }
         ]
@@ -134,7 +139,7 @@ var users = [
     },
     {
         id: 5,
-        name: "Paulina",
+        name: "Polina",
         age: 24,
         bio: "J'adore la finance !",
         rating: 5

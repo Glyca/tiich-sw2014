@@ -1,14 +1,12 @@
 <section>
     <div class="container" ng-controller="WorkshopCtrl">
-        <div class="row workshop">
+        <div class="workshop">
                 <div class="row">
                     <div class="col-md-4">
-                        <p style="line-height: 1.6em">
                             <h1>{{ workshop.name }}</h1>
                             <b><i class="fa fa-calendar"></i></b> {{ workshop.date }}, à {{ workshop.hour }}<br>
                             <b><i class="fa fa-flag"></i></b> {{ workshop.place }}<br>
                             <b><i class="fa fa-clock-o"></i></b> {{ workshop.duration }}<br>
-                        </p>
                     </div>
                     <img src="pictures/map.png" alt="Place to go" class="col-md-4"/>
 
@@ -21,6 +19,7 @@
                                 <ul>
                                     <li>{{ users[workshop.user].name }}</li>
                                     <li>{{ users[workshop.user].age }} ans</li>
+                                    <li>Tiitcheuse en chef !</li>
                                     <div class="star-rating" star-rating rating-value="rating" data-max="5" on-rating-selected="rateFunction(rating)"></div>
                                 </ul>
                             </div>

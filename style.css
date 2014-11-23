@@ -248,10 +248,19 @@ h1, h2, h3 {
     font-family: 'spathasans';
 }
 
-.section h1, .section h2 {
+section h1, section h2 {
     background-color: #AD005A;
     color: #f8f4db;
     padding-top: 10px;
     padding-bottom: 5px;
     line-height: initial;
+}
+
+section h1 {
+    margin-top: 0px;
+}
+
+.workshop input {
+    font-weight:bold;
+    width: 100%;
 }

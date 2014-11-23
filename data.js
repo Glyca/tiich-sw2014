@@ -80,27 +80,32 @@ var users = [
         id: 0,
         name: "Alex",
         age: 21,
-        bio: "J'aime beaucoup le badminton."
+        bio: "J'aime beaucoup le badminton.",
+        rating: 1
     },
     {
         id: 1,
         name: "JP",
-        age: 58
+        age: 58,
+        rating: 4
     },
     {
         id: 2,
         name: "Thomas G.",
-        age: 18
+        age: 18,
+        rating: 5
     },
     {
         id: 3,
         name: "Sania H.",
-        age: 38
+        age: 38,
+        rating: 3
     },
     {
         id: 4,
         name: "John",
         age: 34,
-        bio: "J'aime bien la nation. J'espère que vous aussi !"
+        bio: "J'aime bien la nation. J'espère que vous aussi !",
+        rating: 4
     }
 ];

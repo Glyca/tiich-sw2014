@@ -223,6 +223,21 @@ ul {
     width: 70%;
 }
 
+.jumbotron input {
+    border: solid 1px #91b5a8;
+    border-radius: 5px;
+}
+
+a, .btn-link, input, .btn-link:hover, .btn-link:focus {
+    color: #6d8d80;
+    text-decoration: none;
+}
+
+.button {
+    background-color: #91B5A8;
+
+}
+
 h1, h2, h3 {
     font-family: 'spathasans';
 }

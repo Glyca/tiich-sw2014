@@ -1,12 +1,10 @@
 <section>
     <div class="container" ng-controller="WorkshopCtrl">
-        <div class="row">
-            <h1>{{ workshop.name }}</h1>
-        </div>
         <div class="row workshop">
                 <div class="row">
                     <div class="col-md-4">
                         <p style="line-height: 1.6em">
+                            <h1>{{ workshop.name }}</h1>
                             <b><i class="fa fa-calendar"></i></b> {{ workshop.date }}, à {{ workshop.hour }}<br>
                             <b><i class="fa fa-flag"></i></b> {{ workshop.place }}<br>
                             <b><i class="fa fa-clock-o"></i></b> {{ workshop.duration }}<br>
@@ -38,17 +36,15 @@
                         <p ng-bind-html="workshop.details">
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 checklist">
                         <h2>Check-List</h2>
                         <ul class="checkbox" ng-repeat="check in workshop.checklist">
                             <li>{{ check }}</li>
                         </ul>
                     </div>
                     <div class="col-md-4">
+                        <h2>Avis</h2>
                         <div class="row profile-comments">
-                            <div class="row">
-
-                                <h2>Avis</h2>
 
                                 <div class="container-fluid comments" ng-show="workshop.participating && !comment_published">
                                     <form ng-submit="publish_comment(new_comment)">
@@ -73,7 +69,6 @@
 
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>

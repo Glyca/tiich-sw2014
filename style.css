@@ -1,5 +1,6 @@
 body {
     background-color: #f8f4db;
+    /*background-color: #e1ebeb;*/
 }
 
 a, .btn-link, input, .btn-link:hover, .btn-link:focus {
@@ -47,7 +48,6 @@ nav li {
 }
 
 nav a {
-    /*color: #FF8D00;*/
     color: #3156AD;
     font-weight: bold;
     font-size: 18px;
@@ -63,6 +63,7 @@ nav a:hover {
     float: left;
     height: 50px;
     margin-right: 20px;
+    margin-left: -15px;
 }
 
 form#search input, form#search button {
@@ -177,6 +178,11 @@ section .participation {
 
 section .details {
     text-align: justify;
+    font-size: 0.8em;
+}
+
+.checklist li {
+    margin-left: -30px;
 }
 
 section .profile .star-rating {
@@ -240,4 +246,12 @@ a, .btn-link, input, .btn-link:hover, .btn-link:focus {
 
 h1, h2, h3 {
     font-family: 'spathasans';
+}
+
+.section h1, .section h2 {
+    background-color: #AD005A;
+    color: #f8f4db;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    line-height: initial;
 }

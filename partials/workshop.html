@@ -6,12 +6,11 @@
         <div class="row workshop">
                 <div class="row">
                     <div class="col-md-4">
-                        <ul>
-                            <li><b>Lieu :</b> {{ workshop.place }}</li>
-                            <li><b>Date :</b> {{ workshop.date }}</li>
-                            <li><b>Heure :</b> {{ workshop.hour }}</li>
-                            <li><b>Durée :</b> {{ workshop.duration }}</li>
-                        </ul>
+                        <p style="line-height: 1.6em">
+                            <b><i class="fa fa-calendar"></i></b> {{ workshop.date }}, à {{ workshop.hour }}<br>
+                            <b><i class="fa fa-flag"></i></b> {{ workshop.place }}<br>
+                            <b><i class="fa fa-clock-o"></i></b> {{ workshop.duration }}<br>
+                        </p>
                     </div>
                     <img src="pictures/map.png" alt="Place to go" class="col-md-4"/>
 
@@ -29,7 +28,7 @@
                             </div>
                         </div>
                         <input ng-hide="workshop.participating" type="button" value="Participer !" class="btn btn-lg" ng-click="workshop.participating=!workshop.participating">
-                        <p ng-show="workshop.participating"><span class="text-success" style="font-size: 20px">Vous participez à cet atelier !</span><br />
+                        <p ng-show="workshop.participating" style="line-height: 1em"><span class="text-success" style="font-size: 20px">Vous participez à cet atelier !</span><br />
                         <span style="font-size:small">le <strong>{{ workshop.date }}</strong> <br>à <strong>{{ workshop.hour }}</strong></span></p>
                     </div>
                 </div>
@@ -57,7 +56,7 @@
                                         <div class="star-rating pull-right" star-rating rating-value="new_comment.rating" data-max="5"></div>
                                         <div style="clear: both;"></div>
                                         <textarea ng-model="new_comment.message" placeholder="Donnez votre avis sur l'atelier"></textarea>
-                                        <button type="submit">Publier</button>
+                                        <button type="submit"><i class="fa fa-check"></i></button>
                                     </form>
                                 </div>
 
@@ -69,7 +68,7 @@
                                         <div class="star-rating pull-right" star-rating rating-value="comment.rating" data-max="5" on-rating-selected="rateFunction(rating)"></div>
                                         <div style="clear: both;"></div>
                                         <p>{{ comment.message }} <br>
-                                            <button ng-if="comment.user == 0" ng-click="edit_comment(comment)" class="btn btn-link"><i class="fa fa-pencil-square-o"></i>Modifier</button></p>
+                                            <button ng-if="comment.user == 0" ng-click="edit_comment(comment)" class="btn btn-link"><i class="fa fa-pencil-square-o"></i> Modifier</button></p>
                                     </div>
 
                                 </div>

@@ -5,7 +5,7 @@
             <button class="btn btn-lg" type="submit"><i class="fa fa-search"></i></button>
     </form>
 
-    <h1 ng-show="words">Ateliers proches de vous sur {{ words }}</h1>
+    <h1 ng-show="words">Ateliers proches de vous sur &laquo; {{ words }} &raquo;</h1>
     <h1 ng-show="!words">Ateliers intéréssants proches de vous</h1>
     <ul ng-repeat="workshop in filteredWorkshops = (workshops | filter: words) | limitTo: expanded?100:1">
         <li>
@@ -19,8 +19,8 @@
         </li>
     </ul>
     <p ng-show="filteredWorkshops.length">
-        <button ng-show="!expanded" ng-click="expanded = true" class="btn btn-link">Afficher plus</button>
-        <button ng-show="expanded" ng-click="expanded = false" class="btn btn-link">Afficher moins</button>
+        <button ng-show="!expanded" ng-click="expanded = true" class="btn btn-link"><i class="fa fa-caret-down"></i> Afficher plus</button>
+        <button ng-show="expanded" ng-click="expanded = false" class="btn btn-link"><i class="fa fa-caret-up"></i> Afficher moins</button>
     </p>
 
     <p ng-hide="filteredWorkshops.length">Malheursement personne ne propose d'atelier pour {{ words }}</p>

@@ -13,6 +13,17 @@ a, .btn-link, input, .btn-link:hover, .btn-link:focus {
     display: block;
 }
 
+button[type="submit"] {
+    border: solid 1px #91b5a8;
+    vertical-align: bottom;
+}
+
+textarea {
+    background-color: #f8f4db;
+    border: solid 1px #91b5a8;
+    vertical-align: bottom;
+}
+
 h2 {
     color: #AD005A;
     font-size: 30px;

@@ -65,7 +65,7 @@ nav a:hover {
     margin-right: 20px;
 }
 
-form#search input, form#search button {
+form#search input, form#search button, form#subscribe input, form#subscribe button {
     width: 93%;
     height: 55px;
     font-size: 24px;
@@ -73,12 +73,12 @@ form#search input, form#search button {
     padding: 10px;
 }
 
-form#search button {
+form#search button, form#subscribe button {
     width: 6%;
 }
 
 h1 {
-    color: #AD005A;
+    color: #AD005A !important;
     margin-bottom: 20px;
     font-weight: bold;
     text-align: center;

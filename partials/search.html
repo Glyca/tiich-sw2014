@@ -3,14 +3,17 @@
         <p class="text-center"><img src="pictures/logo.png"></p>
 
         <form ng-controller="SearchCtrl" ng-submit="search()" id="search">
-            <input ng-model="words" placeholder="Que voulez-vous apprendre demain ?">
-            <button class="btn btn-lg" type="submit"><i class="fa fa-search"></i></button>
+            <input ng-model="words" placeholder="Que voulez-vous apprendre demain ?" disabled>
+            <button class="btn btn-lg" type="submit" disabled><i class="fa fa-search"></i></button>
         </form>
 
-        <p><br></p>
+        <p><hr><br></p>
 
-        <p class="text-center">
-            <a class="btn btn-lg" href="#/search/" role="button">Ateliers à proximité</a>
-        </p>
+        <h1>Bientôt disponible</h1>
+
+        <form action="https://docs.google.com/forms/d/1i547j2nmZyeZZZcHGB0km8eYK8YyTH-fhTqROOMZxkA/viewform" method="get" id="subscribe">
+            <input name="entry.1743125951" type="mail" placeholder="Tenez-moi informé à cette adresse">
+            <button class="btn btn-lg" type="submit"><i class="fa fa-send"></i></button>
+        </form>
     </div>
 </div>

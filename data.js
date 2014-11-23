@@ -134,7 +134,7 @@ var users = [
     },
     {
         id: 5,
-        name: "Paulina",
+        name: "Polina",
         age: 24,
         bio: "J'adore la finance !",
         rating: 5

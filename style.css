@@ -77,6 +77,14 @@ form#search button, form#subscribe button {
     width: 6%;
 }
 
+form#subscribe input {
+    background-color: #6d8d80;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+}
+
 h1 {
     color: #AD005A !important;
     margin-bottom: 20px;

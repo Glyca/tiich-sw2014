@@ -23,6 +23,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'UserCtrl'
         })*/
 
+        .when('/about', {
+            templateUrl: 'partials/about.html'
+        })
+
+
         .otherwise({
             templateUrl: 'partials/soon.html'
         });

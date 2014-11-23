@@ -50,7 +50,7 @@
 
                                 <h2>Avis</h2>
 
-                                <div class="container comment" ng-show="workshop.participating && !comment_published">
+                                <div class="container-fluid comments" ng-show="workshop.participating && !comment_published">
                                     <form ng-submit="publish_comment(new_comment)">
                                         <div class="author pull-left">{{ users[new_comment.user].name }}</div>
                                         <div class="star-rating pull-right" star-rating rating-value="new_comment.rating" data-max="5"></div>

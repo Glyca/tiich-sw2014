@@ -119,6 +119,10 @@ section .comments {
     font-size: .8em;
 }
 
+section .comments textarea {
+    font-size: 16px;
+}
+
 section .author {
     text-align: right;
     font-weight: bold;

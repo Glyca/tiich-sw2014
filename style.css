@@ -81,8 +81,10 @@ form#subscribe input {
     background-color: #6d8d80;
     color: white;
     font-weight: bold;
-    font-size: 24px;
     border: none;
+    font-size: 36px;
+    width: 400px;
+    height: 100px;
 }
 
 h1 {
